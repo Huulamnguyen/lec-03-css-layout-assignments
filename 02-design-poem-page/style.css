@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul > li {
+    border-top: 2px solid gray;
+    padding: 2rem;
+}
+
+#poem-list {
+    background-color: lightgray;
+    position: fixed;
+    width: 30%;
+    height: 100%;
+}
+
+#header {
+    text-align: center;
+}
+
+#poem-content {
+    position: absolute;
+    left: 30%;
+    padding: 0 2rem;
+}
+
+@media only screen and (max-width: 620px) {
+
+    #poem-list {
+        position: relative;
+        width: 100%;
+    }
+
+    #poem-content {
+        position: relative;
+        left: 0;
+    }
+}
